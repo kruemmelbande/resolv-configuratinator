@@ -1,0 +1,11 @@
+[Unit]
+Description=Stop fucking up my resolv.conf
+
+[Service]
+User=root
+Group=root
+ExecStart=python /path/to/configuratinator.py
+
+[Install]
+WantedBy=multi-user.target
+
